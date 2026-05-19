@@ -1,0 +1,7 @@
+hello-world-next/node_modules
+hello-world-next/.next
+hello-world-next/out
+hello-world-next/build
+.git
+.gitignore
+README.md
