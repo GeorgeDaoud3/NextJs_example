@@ -1,5 +1,22 @@
 import Link from "next/link";
 
+interface ClickONProps {
+  page: string;
+}
+
+const ClickON = (props : ClickONProps) => {
+	return 	(
+		<p>
+		Click on this 
+		<a href='{props.page}'>
+			<u> Link </u>
+		</a> 
+		 to Go
+		<b> {props.page} </b> 
+		 Route
+		</p>
+		);
+}
 export default function Home() {
     return (
 	<main className="main">
@@ -13,17 +30,8 @@ export default function Home() {
 			</Link>
 		</div>
 		<div>This is HomePage
-			<p>
-			Click on this <a href='/page1'><u>Link</u></a> to Go
-			<b>/page1</b>
-			Route
-			</p>
-		
-			<p>
-				Click on this <a href='/page2'><u>Link</u></a> to Go
-				<b>/page2</b> Route
-			</p>
-		
+		<ClickON page="/page1" />
+		<ClickON page="/page2" />
 		</div>
 	</main>
 	);
