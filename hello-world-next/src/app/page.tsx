@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-	<>
+	<main className="main">
         <div>
             <h1>Hello, World!</h1>
         </div>
@@ -25,7 +25,7 @@ export default function Home() {
 			</p>
 		
 		</div>
-	</>
+	</main>
 	);
 }
 //export default HomePage;
